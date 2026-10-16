@@ -1,414 +1,874 @@
 <!DOCTYPE html>
-
-<html>
-<head> 
-	<meta charset="utf-8"> 
-	<meta name="keywords" content="Tags, html,">
-    <meta name="author" content="Jhoam Sebastian">
+<html lang="es">
+<head>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Guía de las principales etiquetas HTML5: qué hace cada una, cómo se escribe y cómo se ve renderizada en el navegador.">
+	<meta name="keywords" content="HTML5, etiquetas, tags, elementos, guía">
+	<meta name="author" content="Jhoam Sebastian">
 	<link rel="icon" href="html-5.png">
-    <link rel="stylesheet" href="tags_html.css">
-	<title> html</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap">
+	<link rel="stylesheet" href="tags_html.css">
+	<title>Tags HTML — Guía de etiquetas HTML5</title>
 </head>
 
 <body>
-	<header> 
-	
+	<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+	<header class="cabecera">
+		<a class="marca" href="#inicio">
+			<img src="tag_html.png" alt="tags html, inicio" width="1020" height="256">
+		</a>
 	</header>
-	
-<article> 
-	<section>
-		<a name="inicio"></a>
-		<div><h1><b>Tags HTML</b></h1></div>
-		
-         <p>Las etiquetas HTML son bloques de código que dan formato; funcionalidad y estructura al contenido de las páginas web. Estos fragmentos sirven como 
-		indicadores o instrucciones para que un navegador muestre de forma adecuada la información contenida en tus documentos. </p>
-		<br>
-		<div><img class="imagen_grande" src="tag_html.png" alt="html" title="Tags HTML"></div>
-	
-	<p>las etiquetas HTML <b>h1, h2, h3, h4, h5, y h6</b> se utilizan para crear encabezados de distintos niveles en una página web. 
-	Cada uno de estos elementos tiene un tamaño de fuente y un nivel de importancia específico, donde h1 es el encabezado más importante y h6 el menos importante.</p>
-    <p><b>Ejemplo:</b></p>
-	<p>
-	<p><h1> h1: Este es el Título Principal</h1></p>
-	<p><h2>h2: Subtítulo Importante</h2></p>
-	<p><h3>h3: Subtítulo Menos Importante</h3></p>
-	<p><h4>h4: Subtítulo de Nivel 4</h4></p>
-	<p><h5>h5: Subtítulo de Nivel 5</h5></p>
-	<p><h6>h:6 Subtítulo de Nivel 6</h6></p>
-    </p>
-	<br>
-	<p>La etiqueta HTML <b>blockquote</b> se utiliza para representar un bloque de texto que es una cita o extracto de otro recurso, como un libro, un artículo, una entrevista, etc.
-	 Es una manera de destacar y dar formato especial a las citas dentro de una página web. Por lo general, el texto dentro de un <b>blockquote</b>se muestra con un sangrado en
-	 ambos lados y a menudo se muestra en una fuente diferente para distinguirlo del texto circundante.</p>
-	 <p><b>Ejemplo:</b></p>
-	 <p><blockquote> blockquote: Este es el texto citado. Puede ser una cita larga o corta./blockquote</blockquote></p>
-	  <br>
-	  <p>La etiqueta HTML <b>pre</b> se utiliza para representar texto preformateado o texto con formato fijo en una página web. El contenido dentro de una etiqueta <b>pre</b> 
-	se muestra exactamente como está escrito, incluyendo espacios en blanco, saltos de línea y caracteres especiales. Esta etiqueta es útil cuando necesitas mostrar código fuente,
-    texto con formato específico, o cualquier otro contenido en el que la estructura y los espacios en blanco son importantes.</p>
-	<p><b>Ejemplo:</b></p>
-	<p><pre>
-		pre: function saludar() {
-		  console.log("¡Hola, mundo!");
-		}
-	  /pre</pre></p>
-	  <br>
-	  <p>En este ejemplo, el contenido dentro de la etiqueta <b>pre</b> se muestra con el formato exacto, incluyendo los espacios en blanco y los saltos de línea. Es útil cuando deseas mostrar 
-		código fuente, como en este caso, o cualquier otro contenido que deba mantener su formato original.</p>
-	  <br>
-	  <p>La etiqueta HTML <b>figure</b> se utiliza para agrupar contenido relacionado, como imágenes, gráficos, diagramas, ilustraciones o cualquier otro elemento multimedia,
-		 junto con su respectiva descripción. La etiqueta <b>figure</b> permite asociar una descripción a un elemento multimedia, lo que es especialmente útil para la accesibilidad 
-		 y para proporcionar contexto al contenido visual.</p>
-		 <br>
-		 <p>La etiqueta HTML <b>figcaption></b> se utiliza para proporcionar una descripción o una leyenda a un elemento multimedia o contenido agrupado dentro de una etiqueta <b>figure>.</b>
-		 Esta etiqueta se utiliza principalmente para agregar contexto o información adicional sobre el contenido visual o multimedia que se encuentra dentro del elemento <b>figure>.</b></p>
-	<p><b>Ejemplo:</b></p>
-	<div><p><figure>
-		figure: <img class="imagen_grande" src="seebensee-2384369.jpg" alt="Una imagen descriptiva">
-		<figcaption>Esta es una imagen que ilustra un hermoso paisaje natural.</figcaption>
-	  </figure></p>
-	  <br>
-	<p> En este ejemplo, hemos utilizado la etiqueta <b>figure</b> para envolver una imagen. La imagen se muestra con la etiqueta <b>img,</b> y la descripción de la imagen se proporciona
-	  mediante la etiqueta <b>figcaption</b>. La etiqueta <b>figcaption</b>está anidada dentro de la etiqueta <b>figure</b>, y proporciona una descripción del contenido visual.</p>
-	  </div>
-	  <br>
-	  <p>La etiqueta HTML <b>main</b> se utiliza para marcar el contenido principal de un documento HTML. Esta etiqueta se introdujo en HTML5 y es especialmente útil para mejorar la 
-	  accesibilidad y la estructura de una página web. Al usar la etiqueta <b>main></b>, estás indicando claramente cuál es el contenido principal de tu página,
-	 lo que puede ser útil para los motores de búsqueda, lectores de pantalla y desarrolladores web que trabajan en el mantenimiento de la página.</p>
-	<p><b>Ejemplo:</b></p>
-	<p><main> main: Este es el contenido principal de la página. Aquí se encuentra la información más relevante y el foco de la página./main</main></p>
-	<br>
-	<p>La etiqueta HTML <b>section</b> se utiliza para definir una sección temática o agrupar contenido relacionado en un documento HTML. 
-	Esta etiqueta se emplea para ayudar a estructurar el contenido de una página web de manera semántica, dividiendo el contenido en secciones lógicas. 
-	Cada sección suele contener un encabezado descriptivo que describe su contenido. La etiqueta <b>section></b> es útil para facilitar la navegación,
-	 la accesibilidad y el estilo CSS.</p>
-	 <br>
-	 <p>La etiqueta HTML <b>article</b> se utiliza para marcar un contenido independiente y autónomo en un documento HTML.
-	 Un artículo es un contenido que puede existir por sí mismo y que es lógicamente independiente del resto del documento. 
-	 Puede ser un artículo de noticias, un blog, una publicación en un foro o cualquier otro contenido que sea completo por sí mismo. 
-	 Usar la etiqueta <b>article</b> ayuda a estructurar el contenido de una página web de manera semántica, lo que puede ser beneficioso
-	 para motores de búsqueda y lectores de pantalla.</p>
-	 <br>
-	 <p>La etiqueta HTML <b>header</b> se utiliza para definir una sección de encabezado en un documento HTML. 
-	Esta sección de encabezado generalmente contiene elementos que proporcionan información introductoria o de navegación para el contenido de la página.
-	 El contenido dentro de la etiqueta <b>header</b> suele incluir el logotipo del sitio, el título de la página, enlaces de navegación principales u otros 
-	 elementos que se deseen destacar en la parte superior de la página web.</p>
-	 <br>
-	 <p>La etiqueta HTML <b>footer</b> se utiliza para definir una sección de pie de página en un documento HTML. 
-	El pie de página generalmente contiene información que se considera relevante para el contenido de la página,
-	pero que se encuentra en la parte inferior de la misma. El contenido típico de un pie de página puede incluir información de contacto,
-     derechos de autor, enlaces a páginas relacionadas, referencias, información de atribución, etc.</p>
-	<br>
-	<p>La etiqueta HTML <b>aside</b> se utiliza para marcar contenido secundario o relacionado en un documento HTML.
-	 El contenido dentro de la etiqueta <b>aside</b> se considera información que es tangencial o complementaria al contenido principal del documento.
-	 Esto puede incluir elementos como barras laterales, anuncios, notas aclaratorias, enlaces relacionados o cualquier otro contenido que, aunque esté relacionado con el contenido principal, 
-	no es esencial para comprenderlo.</p>
-	<p>El propósito principal de la etiqueta <b>aside</b> es ayudar a estructurar el contenido de la página de manera más semántica y facilitar la navegación y la comprensión del contenido
-	 para los usuarios y los motores de búsqueda.</p>
-	 <br>
-	 <p>La etiqueta HTML <b>nav</b> se utiliza para marcar una sección de navegación en un documento HTML. Esta sección de navegación generalmente contiene enlaces o elementos que permiten
-	 a los usuarios navegar por diferentes partes del sitio web, como enlaces a otras páginas, secciones importantes, menús de navegación, barras de navegación, etc. </p>
-	 <p><b>Ejemplo:</b></p>
-     <div><img class="imagen" src="Etiquetas HTML5.JPG" alt="ejemplo" title="Tags HTML">
-	 </div>
-	 <br>
-	 <p>La etiqueta HTML <b>dfn></b> se utiliza para marcar una instancia de un término que se está definiendo o explicando dentro del texto.
-	 El propósito principal de <b>dfn</b> es proporcionar una forma semántica de indicar que un término en el texto tiene una definición específica en el contexto de la página web.</p>
-	 <p><b>Ejemplo:</b></p>
-     <div><img class="imagen" src="html-dfn.png" alt="ejemplo" title="Tags HTML">
-	 </div>
-	 <br>
-	 <p>La etiqueta HTML <b>u</b> se utilizaba tradicionalmente para subrayar el texto en una página web, lo que indicaba que ese texto era un enlace o que tenía algún otro tipo de importancia o énfasis.
-	 Sin embargo, en la especificación HTML5, el elemento <b>u</b> ha sido redefinido y se desaconseja su uso para subrayar texto no relacionado con enlaces o para resaltar énfasis,
-	  ya que HTML5 proporciona elementos más apropiados para estos propósitos.</p>
-	  <br>
-	  <p>La etiqueta HTML <b>small</b> se utiliza para definir un fragmento de texto que debe presentarse en un tamaño de fuente más pequeño que el texto circundante. 
-	Se utiliza comúnmente para representar texto que es menos relevante o menos importante en comparación con el texto principal de un párrafo o una sección de contenido.</p>
-	<p><b>Ejemplo:</b></p>
-	<p>Este es un breve ejemplo del uso de la etiqueta Small:<small> small y lo pequeña en comparacion </small>/small del resto de la línea</p>
-	<br>
-	<p>La etiqueta HTML <b>div</b> (abreviatura de "division") se utiliza para crear un contenedor genérico o un bloque de división en una página web.
-	 No proporciona ningún formato o estilo específico por sí misma, pero se utiliza para agrupar y estructurar elementos HTML dentro de un bloque o contenedor común.
-	El propósito principal de la etiqueta <b>div</b> es permitir la organización y el diseño de la página web mediante la creación de secciones o áreas de contenido que pueden ser estilizadas y manipuladas mediante CSS o JavaScript. 
-	Los elementos HTML, como párrafos, encabezados, imágenes, enlaces y otros, se pueden colocar dentro de un <b>div></b> para crear secciones específicas de contenido.</p>
-	<p><b>Ejemplo:</b></p>
-	<div><img class="imagen" src="html5_11.png" alt="ejemplo" title="Tags HTML">
+
+	<div class="maquetacion">
+
+		<nav class="indice" aria-label="Índice de etiquetas">
+			<details>
+				<summary>Índice de etiquetas</summary>
+				<div class="grupos">
+
+					<p class="grupo">Texto y encabezados</p>
+					<ul>
+						<li><a href="#t-h1">h1 – h6</a></li>
+						<li><a href="#t-p">p</a></li>
+						<li><a href="#t-br">br</a></li>
+						<li><a href="#t-wbr">wbr</a></li>
+						<li><a href="#t-pre">pre</a></li>
+						<li><a href="#t-blockquote">blockquote</a></li>
+						<li><a href="#t-small">small</a></li>
+						<li><a href="#t-u">u</a></li>
+						<li><a href="#t-mark">mark</a></li>
+						<li><a href="#t-ins">ins</a></li>
+						<li><a href="#t-del">del</a></li>
+						<li><a href="#t-sub">sub</a></li>
+						<li><a href="#t-sup">sup</a></li>
+						<li><a href="#t-time">time</a></li>
+						<li><a href="#t-data">data</a></li>
+						<li><a href="#t-dfn">dfn</a></li>
+						<li><a href="#t-code">code</a></li>
+						<li><a href="#t-samp">samp</a></li>
+						<li><a href="#t-kbd">kbd</a></li>
+					</ul>
+
+					<p class="grupo">Estructura semántica</p>
+					<ul>
+						<li><a href="#t-main">main</a></li>
+						<li><a href="#t-section">section</a></li>
+						<li><a href="#t-article">article</a></li>
+						<li><a href="#t-header">header</a></li>
+						<li><a href="#t-footer">footer</a></li>
+						<li><a href="#t-aside">aside</a></li>
+						<li><a href="#t-nav">nav</a></li>
+						<li><a href="#t-figure">figure</a></li>
+						<li><a href="#t-figcaption">figcaption</a></li>
+						<li><a href="#t-div">div</a></li>
+					</ul>
+
+					<p class="grupo">Multimedia y gráficos</p>
+					<ul>
+						<li><a href="#t-img">img</a></li>
+						<li><a href="#t-svg">svg</a></li>
+					</ul>
+
+					<p class="grupo">Tablas</p>
+					<ul>
+						<li><a href="#t-caption">caption</a></li>
+						<li><a href="#t-colgroup">colgroup</a></li>
+						<li><a href="#t-col">col</a></li>
+						<li><a href="#t-thead">thead</a></li>
+						<li><a href="#t-tbody">tbody</a></li>
+						<li><a href="#t-tfoot">tfoot</a></li>
+					</ul>
+
+				</div>
+			</details>
+		</nav>
+
+		<main id="contenido">
+			<article>
+
+				<section class="hero" id="inicio">
+					<h1><span class="corchete">&lt;h1&gt;</span>Tags HTML<span class="corchete">&lt;/h1&gt;</span></h1>
+					<p class="intro">Las etiquetas HTML son bloques de código que dan formato, funcionalidad y estructura al contenido de las páginas web. Estos fragmentos sirven como indicadores o instrucciones para que un navegador muestre de forma adecuada la información contenida en tus documentos.</p>
+					<p class="intro">Cada entrada de esta guía reúne lo mismo: la definición de la etiqueta, el código que la usa y el resultado que estás viendo ahora mismo en tu navegador.</p>
+				</section>
+
+				<section class="seccion" id="s-texto" aria-labelledby="h-texto">
+					<h2 id="h-texto">Texto y encabezados</h2>
+
+					<section class="entrada" id="t-h1" aria-labelledby="th-h1">
+						<h3 class="termino" id="th-h1"><code><span class="c">&lt;</span>h1<span class="c">&gt;</span></code> … <code><span class="c">&lt;</span>h6<span class="c">&gt;</span></code></h3>
+						<p>Las etiquetas <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code> y <code>h6</code> crean encabezados de distintos niveles en una página web. Cada una tiene un tamaño de fuente y un nivel de importancia específico: <code>h1</code> es el encabezado más importante y <code>h6</code> el menos importante. Los buscadores y los lectores de pantalla usan estos niveles para entender el orden del documento.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;h1&gt;Este es el Título Principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo Importante&lt;/h2&gt;
+&lt;h3&gt;Subtítulo Menos Importante&lt;/h3&gt;
+&lt;h4&gt;Subtítulo de Nivel 4&lt;/h4&gt;
+&lt;h5&gt;Subtítulo de Nivel 5&lt;/h5&gt;
+&lt;h6&gt;Subtítulo de Nivel 6&lt;/h6&gt;</code></pre>
+							<div class="resultado">
+								<div class="escalera">
+									<span class="rotulo">h1</span><p class="nivel n1">Este es el Título Principal</p>
+									<span class="rotulo">h2</span><p class="nivel n2">Subtítulo Importante</p>
+									<span class="rotulo">h3</span><p class="nivel n3">Subtítulo Menos Importante</p>
+									<span class="rotulo">h4</span><p class="nivel n4">Subtítulo de Nivel 4</p>
+									<span class="rotulo">h5</span><p class="nivel n5">Subtítulo de Nivel 5</p>
+									<span class="rotulo">h6</span><p class="nivel n6">Subtítulo de Nivel 6</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-p" aria-labelledby="th-p">
+						<h3 class="termino" id="th-p"><code><span class="c">&lt;</span>p<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>p</code> define un párrafo dentro de un documento web. El contenido que va entre la etiqueta de apertura y la de cierre forma un párrafo separado. Por defecto, los navegadores añaden un espacio vertical antes y después de cada párrafo.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;
+&lt;p&gt;Este es otro párrafo.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<p>Este es un párrafo de ejemplo.</p>
+								<p>Este es otro párrafo.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-br" aria-labelledby="th-br">
+						<h3 class="termino" id="th-br"><code><span class="c">&lt;</span>br<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>br</code> inserta un salto de línea dentro del texto y desplaza el resto hacia una nueva línea dentro del mismo párrafo. No tiene contenido visible y no necesita etiqueta de cierre.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;Este es un ejemplo&lt;br&gt;de salto de línea en un párrafo.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<p>Este es un ejemplo<br>de salto de línea en un párrafo.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-wbr" aria-labelledby="th-wbr">
+						<h3 class="termino" id="th-wbr"><code><span class="c">&lt;</span>wbr<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>wbr</code> (<em>word break opportunity</em>) marca un punto donde el navegador puede cortar una palabra si el espacio no alcanza. No fuerza el salto: solo ofrece ese lugar para hacerlo. Es útil con direcciones web o palabras muy extensas.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;Este es un texto con una palabra extremadamente&lt;wbr&gt;larga.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<div class="estrecho">
+									<p>Este es un texto con una palabra extremadamente<wbr>larga.</p>
+								</div>
+							</div>
+						</div>
+						<p class="nota">Prueba a reducir el ancho de la ventana: la palabra se corta justo donde indica <code>wbr</code>, y sin esa marca se saldría del contenedor.</p>
+					</section>
+
+					<section class="entrada" id="t-pre" aria-labelledby="th-pre">
+						<h3 class="termino" id="th-pre"><code><span class="c">&lt;</span>pre<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>pre</code> representa texto preformateado: el contenido se muestra exactamente como está escrito, con sus espacios en blanco, sangrías y saltos de línea. Es útil para mostrar código fuente o cualquier texto cuya estructura visual importa.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;pre&gt;
+function saludar() {
+  console.log("¡Hola, mundo!");
+}
+&lt;/pre&gt;</code></pre>
+							<div class="resultado">
+								<pre>function saludar() {
+  console.log("¡Hola, mundo!");
+}</pre>
+							</div>
+						</div>
+						<p class="nota">Fíjate en que los espacios del interior no se comprimen: el código aparece con el mismo formato que en el archivo.</p>
+					</section>
+
+					<section class="entrada" id="t-blockquote" aria-labelledby="th-blockquote">
+						<h3 class="termino" id="th-blockquote"><code><span class="c">&lt;</span>blockquote<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>blockquote</code> representa un bloque de texto que es la cita o el extracto de otro recurso, como un libro, un artículo o una entrevista. El contenido se muestra sangrado a ambos lados para distinguirlo del texto circundante.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;blockquote&gt;
+  &lt;p&gt;Este es el texto citado. Puede ser una cita larga o corta.&lt;/p&gt;
+&lt;/blockquote&gt;</code></pre>
+							<div class="resultado">
+								<blockquote>
+									<p>Este es el texto citado. Puede ser una cita larga o corta.</p>
+								</blockquote>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-small" aria-labelledby="th-small">
+						<h3 class="termino" id="th-small"><code><span class="c">&lt;</span>small<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>small</code> define un fragmento de texto que se presenta en un tamaño menor que el texto circundante. Se usa para contenido menos relevante: letra pequeña, créditos o comentarios.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;Este es un breve ejemplo de la etiqueta:
+   &lt;small&gt;texto pequeño en comparación&lt;/small&gt; con el resto de la línea.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<p>Este es un breve ejemplo de la etiqueta: <small>texto pequeño en comparación</small> con el resto de la línea.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-u" aria-labelledby="th-u">
+						<h3 class="termino" id="th-u"><code><span class="c">&lt;</span>u<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>u</code> se usaba tradicionalmente para subrayar texto y así señalar que era un enlace o que tenía importancia. En HTML5 el elemento se redefinó y se desaconseja subrayar contenido que no sea un enlace o una marca propia: existen elementos más apropiados para eso.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;El texto &lt;u&gt;subrayado&lt;/u&gt; ya no significa que sea un enlace.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<p>El texto <u>subrayado</u> ya no significa que sea un enlace.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-mark" aria-labelledby="th-mark">
+						<h3 class="termino" id="th-mark"><code><span class="c">&lt;</span>mark<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>mark</code> resalta fragmentos de texto dentro del documento para destacar información relevante. Los navegadores suelen pintar ese fondo de amarillo, de modo que la parte marcada se distingue de la línea completa.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;Este es un ejemplo de texto &lt;mark&gt;resaltado&lt;/mark&gt; con la etiqueta mark.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<p>Este es un ejemplo de texto <mark>resaltado</mark> con la etiqueta mark.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-ins" aria-labelledby="th-ins">
+						<h3 class="termino" id="th-ins"><code><span class="c">&lt;</span>ins<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>ins</code> marca el contenido que ha sido insertado en el documento respecto de su versión anterior. Representa una adición o un cambio nuevo y, por defecto, se muestra subrayado.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;Este texto fue &lt;del&gt;eliminado&lt;/del&gt; y este texto fue &lt;ins&gt;insertado&lt;/ins&gt;.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<p>Este texto fue <del>eliminado</del> y este texto fue <ins>insertado</ins>.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-del" aria-labelledby="th-del">
+						<h3 class="termino" id="th-del"><code><span class="c">&lt;</span>del<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>del</code> marca el contenido eliminado respecto de una versión anterior del documento. Por defecto se muestra tachado, de modo que el lector vea qué se quitó.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;La versión anterior indicaba un crecimiento del
+   &lt;del&gt;12%&lt;/del&gt;, corregido a 10% tras revisar los datos.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<p>La versión anterior indicaba un crecimiento del <del>12%</del>, corregido a 10% tras revisar los datos.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-sub" aria-labelledby="th-sub">
+						<h3 class="termino" id="th-sub"><code><span class="c">&lt;</span>sub<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>sub</code> representa texto como subíndice: se coloca ligeramente por debajo de la línea base. Se usa en contextos científicos, matemáticos y técnicos para fórmulas químicas, ecuaciones y notación matemática.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;El agua se representa como H&lt;sub&gt;2&lt;/sub&gt;O.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<p>El agua se representa como H<sub>2</sub>O.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-sup" aria-labelledby="th-sup">
+						<h3 class="termino" id="th-sup"><code><span class="c">&lt;</span>sup<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>sup</code> representa texto como superíndice: se coloca ligeramente por encima de la línea base. Es útil en matemáticas y ciencias para exponentes y potencias.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;El área de un círculo es A = πr&lt;sup&gt;2&lt;/sup&gt;, donde r es el radio.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<p>El área de un círculo es A = πr<sup>2</sup>, donde r es el radio.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-time" aria-labelledby="th-time">
+						<h3 class="termino" id="th-time"><code><span class="c">&lt;</span>time<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>time</code> representa fechas y horas en un formato estándar. Marca la información temporal de forma semántica, lo que facilita el trabajo de los lectores de pantalla y de los buscadores. El atributo <code>datetime</code> lleva la fecha en formato ISO 8601, legible para la máquina, mientras que el texto interior se muestra en el formato que prefieras para las personas.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;La fecha de publicación de este artículo es
+   &lt;time datetime="2023-10-30"&gt;30 de octubre de 2023&lt;/time&gt;.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<p>La fecha de publicación de este artículo es <time datetime="2023-10-30">30 de octubre de 2023</time>.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-data" aria-labelledby="th-data">
+						<h3 class="termino" id="th-data"><code><span class="c">&lt;</span>data<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>data</code> incorpora un valor específico asociado a un contenido, como una cifra o una fecha, y lo liga a un valor legible para la máquina mediante el atributo <code>value</code>. Aporta semántica al documento y mejora la accesibilidad, porque las tecnologías de asistencia pueden interpretar el dato.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;La temperatura actual es &lt;data value="25"&gt;25°C&lt;/data&gt;.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<p>La temperatura actual es <data value="25">25°C</data>.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-dfn" aria-labelledby="th-dfn">
+						<h3 class="termino" id="th-dfn"><code><span class="c">&lt;</span>dfn<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>dfn</code> marca la instancia de un término que se está definiendo o explicando dentro del texto. Indica de forma semántica que ese término tiene una definición específica en el contexto de la página.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;El &lt;dfn&gt;HTML&lt;/dfn&gt; es el lenguaje de marcado que da
+   estructura a las páginas web.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<p>El <dfn>HTML</dfn> es el lenguaje de marcado que da estructura a las páginas web.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-code" aria-labelledby="th-code">
+						<h3 class="termino" id="th-code"><code><span class="c">&lt;</span>code<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>code</code> marca fragmentos de código dentro del documento. Indica que ese contenido es código fuente y normalmente se muestra en una fuente monoespaciada para distinguirlo del texto normal. Su uso es habitual en varios contextos:</p>
+						<ul>
+							<li>Mostrar ejemplos de código fuente.</li>
+							<li>Resaltar comandos o instrucciones en tutoriales técnicos.</li>
+							<li>Presentar código en documentación técnica.</li>
+							<li>Marcar datos o valores literales que deben copiarse tal cual.</li>
+							<li>Indicar nombres de variables, funciones o identificadores.</li>
+						</ul>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;Para imprimir un mensaje en JavaScript, utiliza
+   &lt;code&gt;console.log('Hola, mundo');&lt;/code&gt;.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<p>Para imprimir un mensaje en JavaScript, utiliza <code>console.log('Hola, mundo');</code>.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-samp" aria-labelledby="th-samp">
+						<h3 class="termino" id="th-samp"><code><span class="c">&lt;</span>samp<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>samp</code> representa la salida de un programa o el mensaje que devuelve una aplicación. El texto se muestra en monoespaciada, igual que se vería en una terminal.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;El instalador devuelve: &lt;samp&gt;Error 5: Access is denied&lt;/samp&gt;.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<p>El instalador devuelve: <samp>Error 5: Access is denied</samp>.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-kbd" aria-labelledby="th-kbd">
+						<h3 class="termino" id="th-kbd"><code><span class="c">&lt;</span>kbd<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>kbd</code> indica que el texto que contiene es una entrada de teclado, un comando o un atajo.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;p&gt;Pulsa &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt; para guardar.&lt;/p&gt;</code></pre>
+							<div class="resultado">
+								<p>Pulsa <kbd>Ctrl</kbd> + <kbd>S</kbd> para guardar.</p>
+							</div>
+						</div>
+						<figure class="captura">
+							<img src="maxresdefault.jpg" alt="Diapositiva que muestra el uso de la etiqueta kbd dentro de un párrafo" width="1150" height="431">
+							<figcaption>La etiqueta <code>kbd</code> marcando entradas de teclado en un párrafo.</figcaption>
+						</figure>
+					</section>
+
+				</section>
+
+				<section class="seccion" id="s-estructura" aria-labelledby="h-estructura">
+					<h2 id="h-estructura">Estructura semántica</h2>
+
+					<section class="entrada" id="t-main" aria-labelledby="th-main">
+						<h3 class="termino" id="th-main"><code><span class="c">&lt;</span>main<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>main</code> marca el contenido principal de un documento. Se introdujo en HTML5 para mejorar la accesibilidad y la estructura de la página: indica claramente cuál es el contenido principal, lo que beneficia a los buscadores, a los lectores de pantalla y a quien mantiene el sitio. Solo debe haber un elemento <code>main</code> visible por documento.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;main&gt;
+  &lt;h1&gt;Título de la página&lt;/h1&gt;
+  &lt;p&gt;Este es el contenido principal: la información más relevante.&lt;/p&gt;
+&lt;/main&gt;</code></pre>
+						</div>
+						<p class="nota">En esta página, todo lo que estás leyendo está dentro de un único <code>main</code>.</p>
+					</section>
+
+					<section class="entrada" id="t-section" aria-labelledby="th-section">
+						<h3 class="termino" id="th-section"><code><span class="c">&lt;</span>section<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>section</code> define una sección temática o agrupa contenido relacionado, dividiendo el documento en bloques lógicos. Cada sección suele llevar un encabezado que describe su contenido. Facilita la navegación, la accesibilidad y el estilo con CSS.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;section&gt;
+  &lt;h4&gt;Recientes&lt;/h4&gt;
+  &lt;p&gt;Contenido agrupado por tema.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+							<div class="resultado">
+								<section class="caja-demo">
+									<h4>Recientes</h4>
+									<p>Contenido agrupado por tema.</p>
+								</section>
+							</div>
+						</div>
+						<figure class="captura">
+							<img src="Etiquetas HTML5.JPG" alt="Diagrama de una página con bloques header, nav, section, article, aside y footer" width="537" height="537">
+							<figcaption>Cómo se combinan <code>header</code>, <code>nav</code>, <code>section</code>, <code>article</code>, <code>aside</code> y <code>footer</code> en una página.</figcaption>
+						</figure>
+					</section>
+
+					<section class="entrada" id="t-article" aria-labelledby="th-article">
+						<h3 class="termino" id="th-article"><code><span class="c">&lt;</span>article<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>article</code> marca contenido independiente y autónomo: puede existir por sí mismo y es lógicamente independiente del resto del documento. Puede ser una noticia, una entrada de blog o una publicación en un foro. Usarlo ayuda a estructurar la página de forma semántica, lo que beneficia a los buscadores y a los lectores de pantalla.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;article&gt;
+  &lt;h4&gt;Entrada independiente&lt;/h4&gt;
+  &lt;p&gt;Puede publicarse por sí misma, como un post o una noticia.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+							<div class="resultado">
+								<article class="caja-demo">
+									<h4>Entrada independiente</h4>
+									<p>Puede publicarse por sí misma, como un post o una noticia.</p>
+								</article>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-header" aria-labelledby="th-header">
+						<h3 class="termino" id="th-header"><code><span class="c">&lt;</span>header<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>header</code> define una sección de encabezado con información introductoria o de navegación: logotipo, título de la página, enlaces principales u otros elementos que se quieran destacar en la parte superior.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;header&gt;
+  &lt;h4&gt;Noticias de hoy&lt;/h4&gt;
+  &lt;p&gt;Fecha, autor y navegación de la sección.&lt;/p&gt;
+&lt;/header&gt;</code></pre>
+							<div class="resultado">
+								<header class="caja-demo">
+									<h4>Noticias de hoy</h4>
+									<p>Fecha, autor y navegación de la sección.</p>
+								</header>
+							</div>
+						</div>
+						<p class="nota">El encabezado de esta página es la franja superior con el logotipo.</p>
+					</section>
+
+					<section class="entrada" id="t-footer" aria-labelledby="th-footer">
+						<h3 class="termino" id="th-footer"><code><span class="c">&lt;</span>footer<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>footer</code> define una sección de pie de página con información relevante pero situada al final del documento: contacto, derechos de autor, enlaces relacionados, referencias o atribución.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;footer&gt;
+  &lt;p&gt;Créditos, enlaces y derechos de autor.&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+							<div class="resultado">
+								<footer class="caja-demo">
+									<p>Créditos, enlaces y derechos de autor.</p>
+								</footer>
+							</div>
+						</div>
+						<p class="nota">El pie de esta página está al final y contiene los créditos del trabajo.</p>
+					</section>
+
+					<section class="entrada" id="t-aside" aria-labelledby="th-aside">
+						<h3 class="termino" id="th-aside"><code><span class="c">&lt;</span>aside<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>aside</code> marca contenido secundario o complementario: información tangencial como notas aclaratorias, barras laterales o enlaces relacionados que, aunque guardan relación con el contenido principal, no son esenciales para comprenderlo. Ayuda a estructurar la página y facilita su lectura para las personas y para los buscadores.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;aside&gt;
+  &lt;p&gt;Nota al margen: contenido complementario.&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+							<div class="resultado">
+								<aside class="caja-nota">
+									<p>Nota al margen: contenido complementario.</p>
+								</aside>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-nav" aria-labelledby="th-nav">
+						<h3 class="termino" id="th-nav"><code><span class="c">&lt;</span>nav<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>nav</code> marca una sección de navegación. Contiene enlaces que permiten moverse por el sitio: secciones importantes, menús o barras de navegación.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;nav aria-label="Demostración"&gt;
+  &lt;a href="#inicio"&gt;Inicio&lt;/a&gt;
+  &lt;a href="#s-texto"&gt;Texto&lt;/a&gt;
+  &lt;a href="#s-tablas"&gt;Tablas&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+							<div class="resultado">
+								<nav class="demo-nav" aria-label="Demostración">
+									<a href="#inicio">Inicio</a>
+									<a href="#s-texto">Texto</a>
+									<a href="#s-tablas">Tablas</a>
+								</nav>
+							</div>
+						</div>
+						<p class="nota">El índice de la izquierda de esta página también es un <code>nav</code>.</p>
+					</section>
+
+					<section class="entrada" id="t-figure" aria-labelledby="th-figure">
+						<h3 class="termino" id="th-figure"><code><span class="c">&lt;</span>figure<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>figure</code> agrupa contenido relacionado, como imágenes, gráficos o diagramas, junto con su descripción. Permite asociar la imagen a su leyenda, lo que es especialmente útil para la accesibilidad y para dar contexto al contenido visual.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;figure&gt;
+  &lt;img src="seebensee-2384369.jpg" alt="Un lago entre montañas"&gt;
+  &lt;figcaption&gt;Esta es una imagen que ilustra un hermoso paisaje natural.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+							<div class="resultado">
+								<figure class="captura">
+									<img src="seebensee-2384369.jpg" alt="Un lago entre montañas" width="1280" height="851">
+									<figcaption>Esta es una imagen que ilustra un hermoso paisaje natural.</figcaption>
+								</figure>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-figcaption" aria-labelledby="th-figcaption">
+						<h3 class="termino" id="th-figcaption"><code><span class="c">&lt;</span>figcaption<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>figcaption</code> proporciona la descripción o leyenda del contenido agrupado dentro de una etiqueta <code>figure</code>. Da contexto al contenido visual y siempre vive en el interior de <code>figure</code>.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;figure&gt;
+  &lt;img src="html-5.png" alt="Logotipo de HTML5"&gt;
+  &lt;figcaption&gt;Logotipo de HTML5.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+							<div class="resultado">
+								<figure class="captura">
+									<img class="mini" src="html-5.png" alt="Logotipo de HTML5" width="512" height="512">
+									<figcaption>Logotipo de HTML5.</figcaption>
+								</figure>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-div" aria-labelledby="th-div">
+						<h3 class="termino" id="th-div"><code><span class="c">&lt;</span>div<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>div</code> (abreviatura de <em>division</em>) crea un contenedor genérico o bloque de división. No aporta significado ni formato por sí misma: sirve para agrupar elementos y organizar el diseño de la página mediante CSS o JavaScript.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;div class="caja"&gt;
+  &lt;p&gt;Contenido agrupado dentro de un bloque.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+							<div class="resultado">
+								<div class="caja">
+									<p>Contenido agrupado dentro de un bloque.</p>
+								</div>
+							</div>
+						</div>
+						<figure class="captura">
+							<img src="html5_11.png" alt="Diseño de página hecho con div: cabecera, entradas, barra lateral y pie" width="270" height="251">
+							<figcaption>Un diseño de página construido con varias <code>div</code>.</figcaption>
+						</figure>
+					</section>
+
+				</section>
+
+				<section class="seccion" id="s-multimedia" aria-labelledby="h-multimedia">
+					<h2 id="h-multimedia">Multimedia y gráficos</h2>
+
+					<section class="entrada" id="t-img" aria-labelledby="th-img">
+						<h3 class="termino" id="th-img"><code><span class="c">&lt;</span>img<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>img</code> inserta imágenes en el documento: fotografías, gráficos o iconos. Requiere el atributo <code>src</code>, que indica la ruta de la imagen. El atributo <code>alt</code> describe la imagen para quienes no pueden verla, y <code>width</code> y <code>height</code> fijan sus dimensiones en píxeles.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;img src="etiquetas-y-atributos-hmtl-3.webp"
+     alt="Partes de la etiqueta img"&gt;</code></pre>
+							<div class="resultado">
+								<img src="etiquetas-y-atributos-hmtl-3.webp" alt="Partes de la etiqueta img: elemento, atributos y valores">
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-svg" aria-labelledby="th-svg">
+						<h3 class="termino" id="th-svg"><code><span class="c">&lt;</span>svg<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>svg</code> inserta gráficos vectoriales. Al estar definidos por vectores y no por píxeles, escalan sin perder calidad al cambiar de tamaño. Se definen con sintaxis XML y pueden contener formas, líneas, texto y otras primitivas.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;svg width="100" height="100"&gt;
+  &lt;circle cx="50" cy="50" r="40" fill="#E0451B" /&gt;
+&lt;/svg&gt;</code></pre>
+							<div class="resultado">
+								<svg width="100" height="100" role="img" aria-label="Círculo de color naranja">
+									<circle cx="50" cy="50" r="40" fill="#E0451B" />
+								</svg>
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+				<section class="seccion" id="s-tablas" aria-labelledby="h-tablas">
+					<h2 id="h-tablas">Tablas</h2>
+
+					<section class="entrada" id="t-caption" aria-labelledby="th-caption">
+						<h3 class="termino" id="th-caption"><code><span class="c">&lt;</span>caption<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>caption</code> da un título a la tabla. Se coloca justo después de la etiqueta de apertura, de modo que el título queda asociado a la tabla y es visible para todo el que acceda a ella.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;table&gt;
+  &lt;caption&gt;Lista de precios de productos&lt;/caption&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Producto&lt;/th&gt;
+      &lt;th&gt;Precio&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Lámpara LED&lt;/td&gt;
+      &lt;td&gt;$20.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Silla de oficina&lt;/td&gt;
+      &lt;td&gt;$45.00&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+							<div class="resultado">
+								<table>
+									<caption>Lista de precios de productos</caption>
+									<tbody>
+										<tr>
+											<th>Producto</th>
+											<th>Precio</th>
+										</tr>
+										<tr>
+											<td>Lámpara LED</td>
+											<td>$20.00</td>
+										</tr>
+										<tr>
+											<td>Silla de oficina</td>
+											<td>$45.00</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-colgroup" aria-labelledby="th-colgroup">
+						<h3 class="termino" id="th-colgroup"><code><span class="c">&lt;</span>colgroup<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>colgroup</code> agrupa un conjunto de columnas de la tabla para aplicarles propiedades comunes, como el ancho o el color de fondo, en un solo lugar y sin repetirlos fila por fila.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;table&gt;
+  &lt;colgroup&gt;
+    &lt;col style="background-color:#F3E3B8"&gt;
+    &lt;col span="2" style="background-color:#D7E3F4"&gt;
+  &lt;/colgroup&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Columna 1&lt;/td&gt;
+      &lt;td&gt;Columna 2&lt;/td&gt;
+      &lt;td&gt;Columna 3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+							<div class="resultado">
+								<table>
+									<colgroup>
+										<col style="background-color:#F3E3B8">
+										<col span="2" style="background-color:#D7E3F4">
+									</colgroup>
+									<tbody>
+										<tr>
+											<td>Columna 1</td>
+											<td>Columna 2</td>
+											<td>Columna 3</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-col" aria-labelledby="th-col">
+						<h3 class="termino" id="th-col"><code><span class="c">&lt;</span>col<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>col</code> define propiedades para una columna individual de la tabla. Se declara dentro de <code>colgroup</code> y permite fijar ancho, color de fondo u otros estilos para esa columna.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;table&gt;
+  &lt;colgroup&gt;
+    &lt;col style="background-color:#D7E3F4"&gt;
+    &lt;col style="background-color:#DCEBD8"&gt;
+    &lt;col style="background-color:#F3E3B8"&gt;
+  &lt;/colgroup&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Columna 1&lt;/td&gt;
+      &lt;td&gt;Columna 2&lt;/td&gt;
+      &lt;td&gt;Columna 3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+							<div class="resultado">
+								<table>
+									<colgroup>
+										<col style="background-color:#D7E3F4">
+										<col style="background-color:#DCEBD8">
+										<col style="background-color:#F3E3B8">
+									</colgroup>
+									<tbody>
+										<tr>
+											<td>Columna 1</td>
+											<td>Columna 2</td>
+											<td>Columna 3</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-thead" aria-labelledby="th-thead">
+						<h3 class="termino" id="th-thead"><code><span class="c">&lt;</span>thead<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>thead</code> define la sección de encabezado de una tabla: agrupa las filas que contienen los títulos de las columnas y separa visualmente ese bloque del resto del contenido.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Columna 1&lt;/th&gt;
+      &lt;th&gt;Columna 2&lt;/th&gt;
+      &lt;th&gt;Columna 3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1A&lt;/td&gt;
+      &lt;td&gt;1B&lt;/td&gt;
+      &lt;td&gt;1C&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+							<div class="resultado">
+								<table>
+									<thead>
+										<tr>
+											<th>Columna 1</th>
+											<th>Columna 2</th>
+											<th>Columna 3</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1A</td>
+											<td>1B</td>
+											<td>1C</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-tbody" aria-labelledby="th-tbody">
+						<h3 class="termino" id="th-tbody"><code><span class="c">&lt;</span>tbody<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>tbody</code> define la sección del cuerpo de una tabla: agrupa las filas que contienen el contenido principal, excluyendo los encabezados del <code>thead</code> y los totales del <code>tfoot</code>.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Nombre&lt;/th&gt;
+      &lt;th&gt;Edad&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;María&lt;/td&gt;
+      &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Juan&lt;/td&gt;
+      &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+							<div class="resultado">
+								<table>
+									<thead>
+										<tr>
+											<th>Nombre</th>
+											<th>Edad</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>María</td>
+											<td>25</td>
+										</tr>
+										<tr>
+											<td>Juan</td>
+											<td>30</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+
+					<section class="entrada" id="t-tfoot" aria-labelledby="th-tfoot">
+						<h3 class="termino" id="th-tfoot"><code><span class="c">&lt;</span>tfoot<span class="c">&gt;</span></code></h3>
+						<p>La etiqueta <code>tfoot</code> define la sección del pie de una tabla: agrupa las filas con información resumida, totales u otros datos relevantes, y se declara después de <code>tbody</code> pero antes del cierre de la tabla.</p>
+						<div class="ejemplo">
+							<pre class="codigo"><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Producto&lt;/th&gt;
+      &lt;th&gt;Precio&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Producto A&lt;/td&gt;
+      &lt;td&gt;$20.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Producto B&lt;/td&gt;
+      &lt;td&gt;$130.00&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Total&lt;/td&gt;
+      &lt;td&gt;$150.00&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+							<div class="resultado">
+								<table>
+									<thead>
+										<tr>
+											<th>Producto</th>
+											<th>Precio</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Producto A</td>
+											<td>$20.00</td>
+										</tr>
+										<tr>
+											<td>Producto B</td>
+											<td>$130.00</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td>Total</td>
+											<td>$150.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+						<p class="nota">La etiqueta <code>tfoot</code> es opcional, pero su uso deja la estructura semántica clara. Es común combinarla con <code>thead</code> y <code>tbody</code> para organizar el contenido tabular.</p>
+					</section>
+
+				</section>
+
+			</article>
+		</main>
+
 	</div>
-	<br>
-	<p>La etiqueta HTML <b>code</b> se utiliza para marcar fragmentos de código dentro de un documento HTML. Su propósito principal es indicar que el contenido encerrado en <b>code</b> representa código fuente o un fragmento de código,
-	 y normalmente se muestra en un tipo de fuente mono-espaciada (como Courier) para distinguirlo del texto normal.</p>
-	 <p>El uso de la etiqueta <b>code</b> es útil en varios contextos, como:</p>
-	 <ol> 
-    	<li> Mostrar ejemplos de código fuente.</li>
-    	<li> Resaltar comandos o instrucciones en tutoriales técnicos o de programación.</li>
-    	<li> Presentar código en documentación técnica.</li>
-    	<li> Marcar datos o valores literales que deben ser copiados literalmente.</li>
-		<li> Indicar nombres de variables, funciones o identificadores en un texto.</li>
-    </ol>
-	<p><b>Ejemplo:</b></p>
-	<p>Para imprimir un mensaje en JavaScript, utiliza code:<code>console.log('Hola, mundo');</code>/code.</p>
-	<br>
-	<p>La etiqueta HTML <b>samp></b> es una etiqueta de formato de texto que se utiliza para representar la salida de un programa de computadora
-	 o la entrada del usuario. Cuando se usa la etiqueta <b>samp></b>, el texto dentro de ella se mostrará en un tipo de letra monoespaciado,
-	 típicamente con un fondo gris claro en la mayoría de los navegadores web.</p>
-	 <p><b>Ejemplo:</b></p>
-	 <p>Aqui se ilustra la etiqueta de html samp como :<samp> Error 5: Acces is denied</samp></p>
-	 <div><img class="imagen" src="htmlsamptag.png" alt="ejemplo" title="Tags HTML">
-	 </div>
-	 <br>
-	<p>La etiqueta <b>kbd></b> se usa para indicar que el texto que contiene es una entrada de teclado, 
-	un comando o una abreviatura.</p>
-	<p>típicamente con un fondo gris claro en la mayoría de los navegadores web.</p>
-	 <p><b>Ejemplo:</b></p>
-	 <div><img src="maxresdefault.jpg" alt="ejemplo" title="Tags HTML">
-	 </div>
-	<br>
-	<p>19. La etiqueta <b>`mark`</b> es un elemento de HTML utilizado para resaltar partes específicas del texto dentro de un documento web. Su objetivo principal es proporcionar un énfasis visual o destacar información relevante, permitiendo que ciertos fragmentos de texto se destaquen visualmente del resto del contenido. ### Características principales: 1. **Resaltado visual:** Al utilizar la etiqueta `mark`, el texto envuelto por esta etiqueta se resalta con un color de fondo, generalmente en tonalidad amarilla, lo que lo hace destacar del resto del contenido. Este estilo de resaltado puede variar ligeramente entre diferentes navegadores web, pero se enfoca en hacer que el texto sea visualmente distinguible. 2. **Énfasis en información clave:** Se emplea para resaltar o ll</p>
 
-	<p>Este es un ejemplo de texto <mark>resaltado</mark> utilizando la etiqueta &lt;mark&gt; en HTML.</p>
+	<footer class="pie">
+		<p>Jhoam Sebastian Muñoz B y Cristian Camilo Muñoz B — todos los derechos reservados.</p>
+		<p><a href="#inicio">Volver al inicio</a></p>
+	</footer>
 
+	<script>
+	(function () {
+		var escritorio = window.matchMedia('(min-width:901px)');
+		var detalle = document.querySelector('.indice details');
+		function mantenerAbierto() {
+			if (escritorio.matches && detalle) detalle.open = true;
+		}
+		if (escritorio.addEventListener) escritorio.addEventListener('change', mantenerAbierto);
+		else if (escritorio.addListener) escritorio.addListener(mantenerAbierto);
+		mantenerAbierto();
 
-<p>20.La etiqueta <b>time</b> en HTML se utiliza para representar fechas y horas en un formato estándar. Esta etiqueta permite marcar de manera semántica información temporal en un documento web, lo que facilita la accesibilidad y el procesamiento de la fecha y la hora por parte de los motores de búsqueda y otros agentes que interpretan el contenido web.
+		var enlaces = Array.prototype.slice.call(document.querySelectorAll('.indice a[href^="#t-"]'));
+		if (!enlaces.length || !('IntersectionObserver' in window)) return;
+		var porId = {};
+		enlaces.forEach(function (a) { porId[a.getAttribute('href').slice(1)] = a; });
+		var actual = null;
+		var observador = new IntersectionObserver(function (registros) {
+			registros.forEach(function (registro) {
+				if (!registro.isIntersecting) return;
+				var enlace = porId[registro.target.id];
+				if (!enlace) return;
+				if (actual) actual.removeAttribute('aria-current');
+				enlace.setAttribute('aria-current', 'true');
+				actual = enlace;
+			});
+		}, { rootMargin: '0px 0px -65% 0px' });
+		Object.keys(porId).forEach(function (id) {
+			var seccion = document.getElementById(id);
+			if (seccion) observador.observe(seccion);
+		});
+	})();
+	</script>
 
-	A continuación, se detallan algunas de las características y ejemplos de uso de la etiqueta time:</p>
-	
-	<p>Características principales:
-	Atributo datetime: La etiqueta time debe incluir un atributo datetimeque especifique la fecha y la hora en un formato estándar y legible por máquina, generalmente siguiendo el estándar ISO 8601. Esto es esencial para que los navegadores y agentes de búsqueda interpreten la fecha y hora correctamente.
-	
-	Accesibilidad: El uso de la etiqueta time mejora la accesibilidad web, ya que las tecnologías de asistencia pueden interpretar y anunciar de manera más efectiva la información temporal a los usuarios.
-	
-	Formato de visualización personalizado: Aunque la etiqueta time es interpretada por máquinas en formato datetime, su contenido puede presentarse en el formato deseado para los usuarios, como texto legible.</p>
-	<p>La fecha de publicación de este artículo es: time datetime="2023-10-30": <time datetime="2023-10-30">30 de octubre de 2023 </time>/time datetime="2023-10-30":.</p>
-
-	<p>21.La etiqueta HTML <b>ins</b> se usa para marcar el contenido que ha sido insertado en un documento en comparación con su versión previa. Es una forma de mostrar cambios o adiciones en el texto, a menudo utilizado en contextos donde se lleva.</p>
-
-		<p>Características principales de la ins:
-		Representa el texto insertado: Encierra el texto o contenido que ha sido añadido o insertado en una versión actual del documento, en comparación con una versión previa.
-		
-		Estilo predeterminado: Generalmente, el texto marcado por ins se muestra subrayado por defecto, pero su presentación visual puede variar según el navegador y las hojas de estilo aplicadas.</p>
-		
-		<p>Ejemplo:</p>
-		<p>Este texto fue <del>eliminado</del> y este texto fue ins: <ins>insertado</ins> /ins.</p>
-		<p>22.La etiqueta HTML <b>del</b> se utiliza para marcar y mostrar el contenido que ha sido eliminado o eliminado en comparación con una versión anterior del documento. Es especialmente ú
-
-			Características principales de la etiqueta <del>:
-			Representa el texto eliminado: Encierra el contenido que ha sido eliminado o suprimido en la versión actual del documento, en comparación con una versión previa.
-			
-			Estilo predeterminado: Normalmente, el contenido del texto en la<del>sí</p>
-				<p>La versión anterior del informe indicaba un crecimiento del 10%, pero fue corregido a <del>12%</del> debido a una revisión en los datos.</p>
-
-<p>23 La etiqueta HTML <b>data</b> se utiliza para incorporar información adicional o valores específicos
-
-	Características principales de la etiqueta data:
-	Representa datos adicionales: La etiqueta data permite incluir datos específicos que están relacionados con un elemento o contenido en la página, como un valor numérico, una fecha, una cifra, u otro tipo de información.
-	
-	Atributo value: Debe incluir un atributo valueque especifique el valor o dato que se as
-	
-	Accesibilidad y semántica: El uso de la etiqu data contribuye a la semántica del documento y mejora la accesibilidad, ya que permite a las tecnologías de</p>
-	<p>La temperatura actual es: data value="25": <data value="25">25°C</data> /data value="25":.</p>
-<p>24La etiqueta HTML <b>`sub`</b> se utiliza para representar texto como subíndice en un documento HTML. Los subíndices son caracteres o símbolos que se colocan en una posición más baja y ligeramente por debajo del nivel del texto circundante. La etiqueta <b>`sub`</b> es utilizada en contextos científicos, matemáticos y técnicos para mostrar fórmulas químicas, ecuaciones, notación matemática y otros contenidos donde se requiera un formato específico. ### Características principales de la etiqueta `<sub>`: 1. **Representa subíndices:** La etiqueta `sub` se utiliza para marcar y representar texto que debe ser mostrado como subíndice, es decir, ligeramente por debajo del texto circundante. 2. **</p>
-	<p>x<sub>2</sub> + y<sup>2</sup> = r<sup>2</sup></p>
-	<p>25.La etiqueta HTML <sup>se utiliza para representar texto como superínd.<sup>es utilizado en contextos científicos, matemáticos, técnicos o en
-
-		Características principales de la etiqueta <sup>:
-		Representa superíndices: La etiqueta <sup>se utiliza para marcar y representar texto que debe mostrarse como superíndice, es decir, ligeramente por encima del texto circundante.
-		
-		Uso común en matemáticas y ciencias: Es útil para</p>
-		<p>La fórmula matemática para calcular el área de un círculo es: A = πr<sup>2</sup>, donde r es el radio del círculo.</p>
-
-
-	<p>26La etiqueta HTML wbr (Word Break Opportunity) se utiliza para indicar un punto de inserción de salto de línea o corte de palabra en un
-
-		Características principales de la etiqueta <wbr>:
-		Oportunidad de salto de palabra: Sirve como una sugerencia para el navegador de que puede realizar un salto de línea en ese punto si es necesario para evitar que una palabra se divida de forma poco estética o inapropiada.
-		
-		Flexibilidad en el diseño:Es útil especialmente en situaciones donde un texto largo, una URL o</p>
-		<p>Este es un texto con una palabra extremadamente< wbr >larga.</p>
-<p>27La etiqueta br en HTML se utiliza para insertar un salto de línea o un silencio de línea en el texto, lo que produce un salto al rengl.
-
-	Características principales de la etiqueta `<br<br>:
-	Salto de línea forzado: La etiqueta <br>produce un salto de línea en el texto, lo que desplaza el contenido hacia una nueva línea en el mismo párrafo o elemento.
-	
-	No tiene contenido visible: La etiqueta <br>no contiene</p>
-	<p>Este es un ejemplo<br>de salto de línea en un párrafo.</p>
-<p>28La etiqueta p en HTML se utiliza para definir un párrafo dentro de un documento web. Esta etiqueta se emplea para separar
-
-	Características principales de la etiqueta <p>:
-	Definición de párrafos: La etiqueta <p>delimita un párrafo en HTML, indicando que el contenido del texto entre las etiquetas <p>y </p>forma un párrafo separado.
-	
-	Espaciado predeterminado: Por defecto, los navegadores suelen agregar un espacio vertical antes y después de cada párrafo</p>
-	<p>Este es un párrafo de ejemplo.</p>
-<p>Este es otro párrafo.</p>
-<p>29.La etiqueta img en HTML se utiliza para insertar imágenes en un documento web. Esta etiqueta es esencial para la incorporación de gráficos, fotografías, íconos.
-
-	Características principales de la etiqueta <img>:
-	Fuente de imagen: La etiqueta <img>debe incluir el atributo src, que especifica la URL o la ruta de la imagen que se debe mostrar.
-	
-	Texto alternativo: El atributo altse utiliza para proporcionar un texto alternativo que
-	
-	Dimensiones: Los atributos widthy heightpermiten especificar el ancho y el alto de la imagen en píxeles</p>
-	<div><img class="imagen" src="etiquetas-y-atributos-hmtl-3.webp" alt="Descripción de la imagen"></div>
-<p>30.La etiqueta svg en HTML se utiliza para insertar gráficos vectoriales
-
-	Características principales de la etiqueta <svg>:
-	Gráficos vectoriales: Los gráficos SVG son escalables, lo que significa que mantienen su calidad visual sin distorsión al cambiar su tamaño, ya que están definidos por vectores en lugar de píxeles.
-	
-	Sintaxis XML: Los gráficos SVG se definen con una sintaxis XML, lo que permite una amplia gama de posibilidades de diseño.
-	Elementos y atributos: Los gráficos SVG pueden contener formas</p>
-	<div><svg width="100" height="100">
-		<circle cx="50" cy="50" r="40" fill="red" />
-	  </svg></div>
-<p>31.La etiqueta caption se utiliza en HTML en conjunto con la estructura de las tablas para proporcionar un título o una<table>y es una forma de asociar un título descriptivo a la tabla para ofrecer contexto o información adicional sobre su contenido.
-
-	Características principales de la etiqueta<caption>:
-	Título de la tabla: Se emplea para agregar un título descriptivo a la tabla, brindando contexto sobre el contenido de la tabla o su propósito.
-	
-	Posición y visibilidad: La etiqueta <caption>se coloca como el<table>, permitiendo que el título esté asociado directamente con la tabla y sea visible para los usuarios que acceden a ella.</p>	  
-		<table>
-			<caption>Lista de precios de productos</caption>
-			<tr>
-			  <th>Producto</th>
-			  <th>Precio</th>
-			</tr>
-			<tr>
-			  <td>Lámpara LED</td>
-			  <td>$20.00</td>
-			</tr>
-			<!-- Resto de las filas de la tabla -->
-		  </table>
-		  
-<p>32 La etiqueta `colgroup colgroup es HTML
-
-	Características principales de la<colgroup>:
-	Agrupación de columnas: <colgroup> se utiliza para agrupar un conjunto de columnas dentro de una tabla.
-	
-	Establecimiento de propiedades comunes: Permite definir propiedades o atributos comunes a las columnas incluidas.
-	
-	Mejora en la estructura y mantenimiento del código: Facilita la aplicación de estilos y propiedades a varias columnas simultáneamente, lo que puede simplificar el mantenimiento y la estructura.</p>
-	<table>
-		<colgroup>
-		  <col style="background-color: yellow;">
-		  <col span="2" style="background-color: lightblue;">
-		</colgroup>
-		<tr>
-		  <td>Columna 1</td>
-		  <td>Columna 2</td>
-		  <td>Columna 3</td>
-		</tr>
-	  </table>
-	  <p>33. La etiqueta col en HTML se utiliza para definir propiedades específicas para una columna individual en una tabla
-
-		Características principales de la etiqueta col:
-		Propiedades de columna: col se emplea para definir propiedades específicas de una columna en una tabla.
-		
-		Establecimiento de atributos: Permite definir atributos como ancho ( width), color de fondo, estilos de</p>
-		<table>
-			<colgroup>
-			  <col style="background-color: lightblue;">
-			  <col style="background-color: lightgreen;">
-			  <col style="background-color: lightyellow;">
-			</colgroup>
-			<tr>
-			  <td>Columna 1</td>
-			  <td>Columna 2</td>
-			  <td>Columna 3</td>
-			</tr>
-		  </table>
-		  
-<p>34. La etiqueta thead en HTML se emplea para definir la sección de encabezado de una tabla. Esta etiqueta se utiliza para agrupar las filas que contienen los
-
-	Características principales de la etiqueta<thead>:
-	Sección de encabezado: <thead> se usa para contener las filas de encabezado de una tabla.
-	
-	Contiene títulos de columnas: Sirve para agrupar las filas que contienen los encabezados de las columnas de la tabla.
-	
-	Organización visual y estructural: Permite separar claramente el encabezado de la tabla del resto del contenido.</p>>
-	<table>
-		<thead>
-		  <tr>
-			<th>Columna 1</th>
-			<th>Columna 2</th>
-			<th>Columna 3</th>
-		  </tr>
-		</thead>
-		<tbody>
-		  <!-- Filas con contenido de la tabla -->
-		</tbody>
-	  </table>
-	  
-	<p>35. La etiqueta <tbody>en HTML se utiliza para definir la sección del cuerpo de una tabla. Esta etiqueta agrupa las filas que contienen el contenido.
-
-		Características principales de la etiqueta <tbody>:
-		Sección del cuerpo de la tabla: <tbody> se emplea para contener las filas que representan el contenido principal de la tabla.
-		
-		Excluye encabezados y pie de página: La etiqueta <tbody>se utiliza para el</p>>
-			<table>
-				<thead>
-				  <tr>
-					<th>Nombre</th>
-					<th>Edad</th>
-				  </tr>
-				</thead>
-				<tbody>
-				  <tr>
-					<td>María</td>
-					<td>25</td>
-				  </tr>
-				  <tr>
-					<td>Juan</td>
-					<td>30</td>
-				  </tr>
-				</tbody>
-			  </table>
-			  
-<p>36. La etiqueta tfoot en HTML se utiliza para definir la sección del pie de una tabla. Esta etiqueta agrupa las filas que contienen información resumida, totales u otros datos relevantes que se colocan al final de la tabla, después del contenido principal.
-
-	Característicastfoot:
-	Sección del pie de la tabla: tfoot se emplea para contener filas que presentan información de resumen o totales al final de la tabla.
-	
-	Inmediatamente después de los datos del cuerpo de la tabla: Esta etiqueta se coloca después de la sección de <tbody>, pero antes del cierre de la tabla ( </table>).</p>>
-		<table>
-			<thead>
-			  <tr>
-				<th>Producto</th>
-				<th>Precio</th>
-			  </tr>
-			</thead>
-			<tbody>
-			  <tr>
-				<td>Producto A</td>
-				<td>$20.00</td>
-			  </tr>
-			  <!-- Más filas con información de productos y precios -->
-			</tbody>
-			<tfoot>
-			  <tr>
-				<td>Total</td>
-				<td>$150.00</td>
-			  </tr>
-			</tfoot>
-		  </table>
-<p>En este ejemplo, la etiqueta <tfoot>contiene una fila que muestra el total de los precios de los productos al final de la tabla.
-
-	Consideraciones adicionales:
-	La etiqueta `<<tfoot>es opcional, pero su uso proporciona una estructura semántica clara para el
-	Es común utilizar <tfoot>en combinación con <tbody>y `<thead<thead>para una lógica de organización y adecuada del contenido tabular
-	En res<tfoot>se emplea para definir la sección del pie de una tabla en HTML, donde se</p>		  
-				  
-	<br>
-	<a href="#inicio">Clic Aqui para ir al inicio de la pagina.</a>
-	<br>
-	</section>
-</article>
-<footer>
-	<br>
-<h4>Jhoam Sebastian Muñoz B, Cristian Camilo Muñoz B. todos los derechos reservados</h4>
-<br>
-<ul>
-</ul>
-</footer>
-	
 </body>
 </html>
-
