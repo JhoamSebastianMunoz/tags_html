@@ -6,11 +6,11 @@
 	<meta name="description" content="Guía de las principales etiquetas HTML5: qué hace cada una, cómo se escribe y cómo se ve renderizada en el navegador.">
 	<meta name="keywords" content="HTML5, etiquetas, tags, elementos, guía">
 	<meta name="author" content="Jhoam Sebastian">
-	<link rel="icon" href="html-5.png">
+	<link rel="icon" href="assets/img/favicon.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap">
-	<link rel="stylesheet" href="tags_html.css">
+	<link rel="stylesheet" href="assets/css/tags-html.css">
 	<title>Tags HTML — Guía de etiquetas HTML5</title>
 </head>
 
@@ -19,7 +19,7 @@
 
 	<header class="cabecera">
 		<a class="marca" href="#inicio">
-			<img src="tag_html.png" alt="tags html, inicio" width="1020" height="256">
+			<img src="assets/img/logo-tags-html.png" alt="tags html, inicio" width="1020" height="256">
 		</a>
 	</header>
 
@@ -347,7 +347,7 @@ function saludar() {
 							</div>
 						</div>
 						<figure class="captura">
-							<img src="maxresdefault.jpg" alt="Diapositiva que muestra el uso de la etiqueta kbd dentro de un párrafo" width="1150" height="431">
+							<img src="assets/img/ejemplo-kbd.jpg" alt="Diapositiva que muestra el uso de la etiqueta kbd dentro de un párrafo" width="1150" height="431">
 							<figcaption>La etiqueta <code>kbd</code> marcando entradas de teclado en un párrafo.</figcaption>
 						</figure>
 					</section>
@@ -385,7 +385,7 @@ function saludar() {
 							</div>
 						</div>
 						<figure class="captura">
-							<img src="Etiquetas HTML5.JPG" alt="Diagrama de una página con bloques header, nav, section, article, aside y footer" width="537" height="537">
+							<img src="assets/img/estructura-pagina.jpg" alt="Diagrama de una página con bloques header, nav, section, article, aside y footer" width="537" height="537">
 							<figcaption>Cómo se combinan <code>header</code>, <code>nav</code>, <code>section</code>, <code>article</code>, <code>aside</code> y <code>footer</code> en una página.</figcaption>
 						</figure>
 					</section>
@@ -481,12 +481,12 @@ function saludar() {
 						<p>La etiqueta <code>figure</code> agrupa contenido relacionado, como imágenes, gráficos o diagramas, junto con su descripción. Permite asociar la imagen a su leyenda, lo que es especialmente útil para la accesibilidad y para dar contexto al contenido visual.</p>
 						<div class="ejemplo">
 							<pre class="codigo"><code>&lt;figure&gt;
-  &lt;img src="seebensee-2384369.jpg" alt="Un lago entre montañas"&gt;
+  &lt;img src="paisaje.jpg" alt="Un lago entre montañas"&gt;
   &lt;figcaption&gt;Esta es una imagen que ilustra un hermoso paisaje natural.&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
 							<div class="resultado">
 								<figure class="captura">
-									<img src="seebensee-2384369.jpg" alt="Un lago entre montañas" width="1280" height="851">
+									<img src="assets/img/paisaje.jpg" alt="Un lago entre montañas" width="1280" height="851">
 									<figcaption>Esta es una imagen que ilustra un hermoso paisaje natural.</figcaption>
 								</figure>
 							</div>
@@ -498,12 +498,12 @@ function saludar() {
 						<p>La etiqueta <code>figcaption</code> proporciona la descripción o leyenda del contenido agrupado dentro de una etiqueta <code>figure</code>. Da contexto al contenido visual y siempre vive en el interior de <code>figure</code>.</p>
 						<div class="ejemplo">
 							<pre class="codigo"><code>&lt;figure&gt;
-  &lt;img src="html-5.png" alt="Logotipo de HTML5"&gt;
+  &lt;img src="favicon.png" alt="Logotipo de HTML5"&gt;
   &lt;figcaption&gt;Logotipo de HTML5.&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
 							<div class="resultado">
 								<figure class="captura">
-									<img class="mini" src="html-5.png" alt="Logotipo de HTML5" width="512" height="512">
+									<img class="mini" src="assets/img/favicon.png" alt="Logotipo de HTML5" width="512" height="512">
 									<figcaption>Logotipo de HTML5.</figcaption>
 								</figure>
 							</div>
@@ -524,7 +524,7 @@ function saludar() {
 							</div>
 						</div>
 						<figure class="captura">
-							<img src="html5_11.png" alt="Diseño de página hecho con div: cabecera, entradas, barra lateral y pie" width="270" height="251">
+							<img src="assets/img/diseno-con-div.png" alt="Diseño de página hecho con div: cabecera, entradas, barra lateral y pie" width="270" height="251">
 							<figcaption>Un diseño de página construido con varias <code>div</code>.</figcaption>
 						</figure>
 					</section>
@@ -538,10 +538,10 @@ function saludar() {
 						<h3 class="termino" id="th-img"><code><span class="c">&lt;</span>img<span class="c">&gt;</span></code></h3>
 						<p>La etiqueta <code>img</code> inserta imágenes en el documento: fotografías, gráficos o iconos. Requiere el atributo <code>src</code>, que indica la ruta de la imagen. El atributo <code>alt</code> describe la imagen para quienes no pueden verla, y <code>width</code> y <code>height</code> fijan sus dimensiones en píxeles.</p>
 						<div class="ejemplo">
-							<pre class="codigo"><code>&lt;img src="etiquetas-y-atributos-hmtl-3.webp"
+							<pre class="codigo"><code>&lt;img src="anatomia-img.webp"
      alt="Partes de la etiqueta img"&gt;</code></pre>
 							<div class="resultado">
-								<img src="etiquetas-y-atributos-hmtl-3.webp" alt="Partes de la etiqueta img: elemento, atributos y valores">
+								<img src="assets/img/anatomia-img.webp" alt="Partes de la etiqueta img: elemento, atributos y valores">
 							</div>
 						</div>
 					</section>

@@ -17,17 +17,20 @@ Cada entrada sigue el mismo patrón: definición, bloque de código y resultado 
 
 ```
 tags_html/
-├── index.html                       # Documento principal con las 37 entradas
-├── tags_html.css                    # Hoja de estilos (tokens, retícula, componentes)
-├── html-5.png                       # Favicon y ejemplo de figcaption
-├── tag_html.png                     # Logotipo de la cabecera
-├── Etiquetas HTML5.JPG              # Diagrama de estructura (entrada section)
-├── html5_11.png                     # Ejemplo de diseño con div
-├── maxresdefault.jpg                # Ejemplo de kbd
-├── etiquetas-y-atributos-hmtl-3.webp # Esquema de la etiqueta img
-├── seebensee-2384369.jpg            # Imagen de ejemplo de figure
-├── html-dfn.png                     # Recurso sin usar
-└── htmlsamptag.png                  # Recurso sin usar
+├── index.html                     # Documento principal con las 37 entradas
+├── README.md
+├── .gitignore
+└── assets/
+    ├── css/
+    │   └── tags-html.css          # Tokens, retícula y componentes
+    └── img/
+        ├── logo-tags-html.png     # Logotipo de la cabecera
+        ├── favicon.png            # Icono y ejemplo de figcaption
+        ├── estructura-pagina.jpg  # Diagrama de estructura (entrada section)
+        ├── diseno-con-div.png     # Ejemplo de diseño con div
+        ├── ejemplo-kbd.jpg        # Ejemplo de kbd
+        ├── anatomia-img.webp      # Esquema de la etiqueta img
+        └── paisaje.jpg            # Imagen de ejemplo de figure
 ```
 
 ## Uso
@@ -42,7 +45,7 @@ Las tipografías se cargan desde Google Fonts (Archivo e IBM Plex Mono) y caen a
 
 ## Estilos
 
-Los estilos se definen en `tags_html.css`:
+Los estilos se definen en `assets/css/tags-html.css`:
 
 - Paleta de tokens en `:root`: papel `#ECEEE8`, papel de ejemplo `#E1E4DC`, tinta `#1A1A1A`, grafito `#5D6360`, señal `#E0451B` y filete `#C7CBC2`.
 - Tipografía Archivo (con eje de ancho variable para el titular) e IBM Plex Mono para etiquetas y código.

@@ -1,61 +1,30 @@
-.env
-.env.*
-!.env.example
-.supabase/
-supabase/.temp/
+# sistema
 .DS_Store
+Thumbs.db
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# editores
+.vscode/
+.idea/
+*.code-workspace
 
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
+# node
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# variables de entorno
+.env
+.env.*
+!.env.example
 
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
-# agents / AI tooling (infraestructura de skills del asistente)
+# asistencia IA (infraestructura local, no forma parte del sitio)
 .agents*
 .AGENTS.md
+/skills-lock.json
 /opencode*
 /AGENTS.md
-/skills-lock.json
-/opencode.json
 /MEMORY.md
-
-
-# AI / code assistants
 .opencode/
 .claude/
 .cursor/
@@ -63,9 +32,3 @@ next-env.d.ts
 .windsurf/
 .continue/
 .aider*
-.aider.log
-
-# editors
-.vscode/
-.idea/
-*.code-workspace
